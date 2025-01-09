@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #77c850;
+    color: rgb(7, 7, 7);
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #fff;
+    color: rgb(5, 5, 5);
+    width: 99%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    align-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header .number {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tag.normal {
+    background-color: #a6a877;
+}
+
+.tag.grass {
+    background-color: #77c850;
+}
+
+.tag.fire {
+    background-color: #ee7f30;
+}
+
+.tag.water {
+    background-color: #678fee;
+}
+
+.tag.electric {
+    background-color: #f7cf2e;
+}
+
+.tag.ice {
+    background-color: #98d5d7;
+}
+
+.tag.ground {
+    background-color: #dfbf69;
+}
+
+.tag.flying {
+    background-color: #a98ff0;
+}
+
+.tag.poison {
+    background-color: #a040a0;
+}
+
+.tag.fighting {
+    background-color: #bf3029;
+}
+
+.tag.psychic {
+    background-color: #f65687;
+}
+
+.tag.dark {
+    background-color: #725847;
+}
+
+.tag.rock {
+    background-color: #b8a137;
+}
+
+.tag.bug {
+    background-color: #a8b720;
+}
+
+.tag.ghost {
+    background-color: #6e5896;
+}
+
+.tag.steel {
+    background-color: #b9b7cf;
+}
+
+.tag.dragon {
+    background-color: #6f38f6;
+}
+
+.tag.fairy {
+    background-color: #f9aec7;
+}
+
+.about h2, .base-stats h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.base-stats .stats {
+    display: grid;
+    gap: 10px;
+}
+
+.stats {
+    margin-top: 20px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os elementos */
+    margin-bottom: 10px;
+}
+
+.label {
+    width: 30px; /* Para alinhar */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+.divider {
+    width: 1px; /* Largura da linha */
+    height: 20px; /* Altura da linha */
+    background-color: #ccc; /* Cor da linha */
+    margin: 0 5px;
+}
+
+.progressBar {
+    width: 150px;
+    height: 10px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    margin-left: 10px;
+    appearance: none;
+}
+
+.progressBar::-webkit-progress-bar {
+    background-color: #d3d3d3;
+    border-radius: 10px;
+}
+
+.progressBar::-webkit-progress-value {
+    background-color: #78c850;
+    border-radius: 10px;
+}
+
+.progressBar::-moz-progress-bar {
+    background-color: #78c850;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

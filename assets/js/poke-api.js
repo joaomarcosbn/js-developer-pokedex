@@ -33,3 +33,18 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
 }
+
+pokeApi.getPokemonDetails = (id) => {
+    return fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+        .then(response => response.json())
+        .then((data) => ({
+            number: data.id,
+            name: data.name,
+            types: data.types.map(t => t.type.name),
+            photo: data.sprites.other['official-artwork'].front_default,
+            weight: data.weight / 10,
+            height: data.height / 10,
+            abilities: data.abilities.map(a => a.ability.name),
+            description: "A descrição será adicionada aqui." // Personalize se necessário
+        }));
+};
