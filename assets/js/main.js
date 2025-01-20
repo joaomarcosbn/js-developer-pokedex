@@ -1,17 +1,17 @@
-import { pokeApi, displayPokemon } from './poke-api.js'; // Agora você importa as funções corretamente
+import { pokeApi, displayPokemon } from './poke-api.js';
 
-// Lógica para o formulário de busca
+// Adiciona o evento no botão, não apenas no formulário
 document.getElementById('search-form').addEventListener('submit', (event) => {
-    event.preventDefault(); // Isso impede o envio do formulário
+    event.preventDefault(); // Impede o redirecionamento
 
     const pokemonName = document.getElementById('search-input').value.trim();
 
     if (pokemonName) {
         pokeApi.getPokemonDetails(pokemonName)
-            .then(displayPokemon)  // Usa a função displayPokemon para mostrar o Pokémon
+            .then(displayPokemon)
             .catch((error) => {
                 alert(error.message);
-                document.getElementById('pokemon-detail-container').innerHTML = '';
+                document.getElementById('pokemon-detail-container').innerHTML = '<p>Pokémon não encontrado.</p>';
             });
     }
 });
