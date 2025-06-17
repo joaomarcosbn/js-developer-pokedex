@@ -1,84 +1,5 @@
-.pokemons {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
-.normal {
-    background-color: #a6a877;
-}
-
-.grass {
-    background-color: #77c850;
-}
-
-.fire {
-    background-color: #ee7f30;
-}
-
-.water {
-    background-color: #678fee;
-}
-
-.electric {
-    background-color: #f7cf2e;
-}
-
-.ice {
-    background-color: #98d5d7;
-}
-
-.ground {
-    background-color: #dfbf69;
-}
-
-.flying {
-    background-color: #a98ff0;
-}
-
-.poison {
-    background-color: #a040a0;
-}
-
-.fighting {
-    background-color: #bf3029;
-}
-
-.psychic {
-    background-color: #f65687;
-}
-
-.dark {
-    background-color: #725847;
-}
-
-.rock {
-    background-color: #b8a137;
-}
-
-.bug {
-    background-color: #a8b720;
-}
-
-.ghost {
-    background-color: #6e5896;
-}
-
-.steel {
-    background-color: #b9b7cf;
-}
-
-.dragon {
-    background-color: #6f38f6;
-}
-
-.fairy {
-    background-color: #f9aec7;
-}
-
-.pokemon {
+.pokemon{
     display: flex;
     flex-direction: column;
     margin: .5rem;
@@ -86,64 +7,380 @@
     border-radius: 1rem;
 }
 
-.pokemon .number {
-    color: #000;
+.grass{
+    background-color: #9bcc50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.name{
+    color: #fff;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.number{
+    color: black;
     opacity: .3;
     text-align: right;
     font-size: .625rem;
 }
 
-.pokemon .name {
-    text-transform: capitalize;
-    color: #fff;
-    margin-bottom: .25rem;
+.types{
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.pokemon .detail {
+.type{
+    border-radius: 1rem;
+    background-color: #aeca85;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.detail{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.pokemon .detail .types {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.fire{
+    background-color: #FD7D24;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-.pokemon .detail .types .type {
-    color: #fff;
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: .625rem;
+.fire .type{
     border-radius: 1rem;
-    filter: brightness(1.1);
+    background-color: #e46b62;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.water{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.water .name{
+    color: #080808;
+    margin-bottom: 0;
+}
+
+.water .type{
+    border-radius: 1rem;
+    background-color: #62e0e4;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.electric{
+    background-color: yellow;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.electric .name{
+    color: #080808;
+    margin-bottom: 0;
+}
+
+.electric .type{
+    border-radius: 1rem;
+    background-color: #e4e262;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.bug{
+    background-color: #729F3F;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.bug .type{
+    border-radius: 1rem;
+    background-color: #869e6c;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
     text-align: center;
 }
 
-.pokemon .detail img {
-    max-width: 100%;
-    height: 70px;
+.normal{
+    background-color: #A4ACAF;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
 }
 
-.pagination {
+.normal .type{
+    border-radius: 1rem;
+    background-color: #afb1ad;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.poison{
+    background-color: #B97FC9;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.poison .type{
+    border-radius: 1rem;
+    background-color: #c1a2ca;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.ground{
+    background-color: #AB9842;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.ground .type{
+    border-radius: 1rem;
+    background-color: #a89b62;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.fairy{
+    background-color: #FDB9E9;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.fairy .type{
+    border-radius: 1rem;
+    background-color: #fce1f4;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+
+.fighting{
+    background-color: #D56723;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.fighting .type{
+    border-radius: 1rem;
+    background-color: #db9569;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.psychic{
+    background-color: #F366B9;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.psychic .type{
+    border-radius: 1rem;
+    background-color: #e4a2c2;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.rock{
+    background-color: #A38C21;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.rock .type{
+    border-radius: 1rem;
+    background-color: #a79d74;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.ghost{
+    background-color: #7B62A3;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.ghost .type{
+    border-radius: 1rem;
+    background-color: #8c7e9e;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.ice{
+    background-color: #51C4E7;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.ice .type{
+    border-radius: 1rem;
+    background-color: #6db9d4;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.dragon{
+    background-color: #53A4CF;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.dragon .type{
+    border-radius: 1rem;
+    background-color: #F16E57;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+.dark{
+    background-color: #707070;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.dark .type{
+    border-radius: 1rem;
+    background-color: #8c8c8c;
+    padding: 0.25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem .25rem;
+    align-items: center;
+}
+
+ol.pokemons li img{
+    max-width: 100%;
+    height: 70px;
+    align-self: flex-end;
+}
+
+.pagination{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    justify-content: center;
+    list-style: none;
     width: 100%;
     padding: 1rem;
 }
 
-.pagination button {
+.pagination button{
+    background-color: #6c79db;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
-    color: #fff;
-    background-color: #6c79db;
-    border: none;
-    border-radius: 1rem;
 }
 
 @media screen and (min-width: 380px) {
